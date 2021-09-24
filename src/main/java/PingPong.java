@@ -1,9 +1,18 @@
 import java.util.ArrayList;
 
 public class PingPong {
-    public ArrayList<Object> runPingPong(int countUpTo) {
+
+    public ArrayList<Object> runPingPong(int countUpTo){
         ArrayList<Object> result = new ArrayList<Object>();
-        result.add(1);
+        for (int i = 1; i <= countUpTo; i++){
+            if(i % 3 == 0) {
+                result.add("Ping");
+            }
+            else {
+                result.add(i);
+            }
+        }
         return result;
     }
+
 }
