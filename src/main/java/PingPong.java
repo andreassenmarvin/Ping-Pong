@@ -20,5 +20,4 @@ public class PingPong {
         }
         return result;
     }
-
 }
